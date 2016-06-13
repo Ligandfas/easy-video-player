@@ -211,7 +211,7 @@ public class EasyVideoPlayer extends FrameLayout implements IUserMethods, Textur
     @Override
     public void setSource(@NonNull Uri source) {
         mSource = source;
-        if (mPlayer != null) prepare();
+        if (mPlayer != null)  prepareAsync();
     }
 
     @Override
